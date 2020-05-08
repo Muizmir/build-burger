@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationItems from '../navigation-items/navigation-items';
 import Backdrop from '../../ui/backdrop/backdrop';
-import Aux from '../../../hocs/hoc/aux';
+import Aux from '../../../hocs/hoc/auxillary';
 import Logo from '../../logo/logo';
 import './side-drawer.css';
 
