@@ -6,8 +6,8 @@ import './checkout-summary.css';
 const checkoutSummary = props => {
     return(
         <div className='CheckoutSummary'>
-            <h1> Hope it tastes well mate! </h1>
-            <div style={{ width: '100%', margin: 'auto' }}>
+            <h1> {`Your burger costs $${ props.price.toFixed(2) }`} </h1>
+            <div style={{ width: '100%', margin: '0 auto' }}>
                 <Burger ingredients={ props.ingredients } />
             </div>
             <Button btnType='Danger' clicked={ props.checkoutCancelled }> CANCEL </Button>
