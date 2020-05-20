@@ -4,6 +4,7 @@ import axios from '../../../axios-orders';
 import Spinner from '../../../components/ui/spinner/spinner';
 import Input from '../../../components/ui/input/input';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import ErrorHandler from '../../../hocs/error-handler/error-handler';
 import * as actions from '../../../store/actions/exported-actions';
 import CheckValidity from '../../../shared/check-validity';
@@ -107,8 +108,7 @@ const ContactData = props => {
             price: price,
             customer: formData,
             userId: userId
-        }
-        
+        }        
         onBurgerOrder(order, token);
     }
 
@@ -156,9 +156,13 @@ const ContactData = props => {
         if (loading){
             form = <Spinner />
         }
+
+        const purchasedRedirect = props.purchased ? <Redirect to='/' /> : null;
+
         return(
             <div className='ContactData'>
                 <h4> Enter delivery details </h4>
+                    { purchasedRedirect }
                     { form }
             </div>
         )
@@ -170,6 +174,7 @@ const mapStateToProps = state => {
         ings: state.burgerBuilder.ingredients,
         price: state.burgerBuilder.totalPrice,
         loading: state.order.loading,
+        purchased: state.order.purchased,
         token: state.auth.token,
         userId: state.auth.userId
     }

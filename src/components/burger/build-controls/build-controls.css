@@ -5,7 +5,7 @@
     flex-flow: column;
     align-items: center;
     box-shadow: 0 2px 3px rgb(224, 211, 86);
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 10px 10px;    
     transition: all 0.3s ease-out;
 }
@@ -14,7 +14,7 @@
     box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
 }
 
-p{
+.BuildControls p{
     font-size: 20px;
 }
 

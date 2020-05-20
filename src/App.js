@@ -10,6 +10,7 @@ const Orders = React.lazy(() => import('./containers/orders/orders'));
 const Auth = React.lazy(() => import('./containers/auth/auth'));
 const LogOut = React.lazy(() => import('./containers/auth/logout/logout'));
 const Contact = React.lazy(() => import('./containers/contact/contact'));
+const ContactData = React.lazy(() => import('./containers/checkout/contact-data/contact-data'));
 const BurgerBuilder = React.lazy(() => import('./containers/burger-builder/burger-builder'));
 
 const App = props => {  
@@ -32,6 +33,7 @@ const App = props => {
       routes = (
         <Switch>
           <Route path='/checkout' render={() => <Suspense fallback={<Spinner />}><Checkout/></Suspense> } />
+          <Route path='/contact-data' render={() => <Suspense fallback={<Spinner />}><ContactData /></Suspense>} />
           <Route path='/orders' render={() => <Suspense fallback={<Spinner />}><Orders /></Suspense>} />
           <Route path='/auth' render={() => <Suspense fallback={<Spinner />}><Auth /></Suspense>} />
           <Route path='/logout' render={() => <Suspense fallback={<Spinner />}><LogOut /></Suspense>} />
