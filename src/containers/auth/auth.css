@@ -1,16 +1,40 @@
 .Auth{
-    margin: 20px auto;
+    margin: 110px auto;
     width: 80%;
     text-align: center;
-    box-shadow: 0 2px 3px #ccc;
-    border: 1px solid #eee;
+    box-shadow: 0 2px 3px rgb(224, 211, 86);
     padding: 10px;
     box-sizing: border-box;
+    background-color: rgb(231, 228, 186);    
+    transition: all 0.3s ease-out;
+}
+
+.Auth:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
+}
+
+.AuthHeading{
+    font-size: 24px;
+    color: #8F5E1E;
+    width: 70%;
+    margin: 20px auto;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.ErrorMessage{
+    font-size: 14px;
+    color: red;
+    background-color: rgb(218, 170, 68);;
+    width: 50%;
+    margin: 20px auto;
+    padding: 7px 0;
+    box-shadow: 0px 0px 10px 3px black;
 }
 
 
 @media(min-width: 600px){
     .Auth{
-        width: 500px
+        width: 550px
     }
 }

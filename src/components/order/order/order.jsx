@@ -13,19 +13,12 @@ const order = props => {
     const ingredientOutput = ingredients.map( ing => {
         return <span 
                     key={ing.name}
-                    style={{
-                        textTransform: 'capitalize',
-                        display: 'in-block',
-                        margin: '0 8px',
-                        border: '1px solid #ccc',
-                        padding: '5px',
-
-                    }}>{ing.name} : {ing.amount} </span>
+                    className='OrderItems'> {ing.name} : {ing.amount} </span>
     })
     return (
         <div className='Order'>
-            <p> Ingredients: { ingredientOutput } </p>
-            <p> Price: <strong> $ {props.price.toFixed(2)} </strong></p>
+            <p> <strong> Ingredients : </strong> { ingredientOutput } </p>
+            <p> <strong> Price : </strong> ${props.price.toFixed(2)} </p>
         </div>
     )
 }

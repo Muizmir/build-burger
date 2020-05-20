@@ -2,10 +2,15 @@
     margin: 20px auto;
     width: 80%;
     text-align: center;
-    box-shadow: 0 2px 3px #ccc;
-    border: 1px solid #eee;
+    box-shadow: 0 2px 3px rgb(224, 211, 86);
     padding: 10px;
     box-sizing: border-box;
+    background-color: rgb(231, 228, 186);    
+    transition: all 0.3s ease-out;
+}
+
+.ContactData:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
 }
 
 

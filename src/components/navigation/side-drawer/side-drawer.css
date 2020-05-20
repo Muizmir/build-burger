@@ -6,10 +6,10 @@
     top: 0;
     left: 0;
     z-index: 200;
-    background-color: white;
     padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
+    background-color: rgb(238, 235, 213);
 }
 
 @media(min-width: 500px){

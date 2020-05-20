@@ -1,44 +1,47 @@
 .BuildControls{
-    width: 50%;
-    background-color: #CF8F2E;
+    width: 80%;
+    background-color: rgb(218, 170, 68);
     display: flex;
     flex-flow: column;
     align-items: center;
-    box-shadow: 0 2px 1px #ccc;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px 10px;
+    box-shadow: 0 2px 3px rgb(224, 211, 86);
+    margin: 20px auto;
+    padding: 10px 10px;    
+    transition: all 0.3s ease-out;
 }
 
-@media(max-width: 1000px) {
+.BuildControls:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
+}
+
+p{
+    font-size: 20px;
+}
+
+@media(min-width: 500px) {
     .BuildControls{
         width: 65%;
     }
 }
 
-@media(max-width: 500px) {
-    .BuildControls{
-        width: 80%;
-    }
-}
-
-
 .OrderButton {
-    background-color: #DAD735;
+    margin-top: 20px;
+    background-color: rgb(223, 218, 182);
     outline: none;
     cursor: pointer;
-    border: 1px solid #966909;
-    color: #966909;
+    border: 1px solid black;
+    color: black;
     font-family: inherit;
     font-size: 1.2em;
-    padding: 15px 30px;
-    box-shadow: 2px 2px 2px #966909;
+    padding: 10px 15px;
+    margin-bottom: 35px;
+    transition: all 0.3s ease-in-out;
 }
 
 .OrderButton:hover, .OrderButton:active {
-    background-color: #A0DB41;
-    border: 1px solid #966909;
-    color: #966909;
+    background-color: rgb(223, 218, 182);
+    color: black;
+    box-shadow: 0px 0px 13px 1px black;
 }
 
 .OrderButton:disabled {
@@ -46,6 +49,7 @@
     cursor: not-allowed;
     border: 1px solid #ccc;
     color: #888888;
+    box-shadow: none;
 }
 
 .OrderButton:not(:disabled) {

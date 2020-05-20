@@ -10,20 +10,29 @@
     font-weight: bold;
 }
 
-.CustomButton:first-of-type {
+/* .CustomButton:first-of-type {
     margin-left: 0;
     padding-left: 0;
-}
+} */
 
 .CustomButton:disabled{
     color: #ccc;
     cursor: not-allowed;
 }
 
+.CustomButton:disabled:hover{
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.CustomButton:hover{
+    color: rgb(0, 0, 0);
+}
+
 .Success {
-    color: #5C9210;
+    color: rgb(119, 189, 21);
 }
 
 .Danger {
-    color: #944317;
+    color: #bd4f14;
 }

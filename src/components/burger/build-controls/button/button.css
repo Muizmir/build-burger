@@ -17,15 +17,15 @@
 }
 
 .Button button:disabled {
-    background-color: #AC9980;
-    border: 1px solid #7E7365;
-    color: #ccc;
+    background-color: #C7C6C6;
+    border: 1px solid rgb(182, 177, 177);
+    color: #888888;
     cursor: default;
 }
 
 .Button button:hover:disabled {
-    background-color: #AC9980;
-    color: #ccc;
+    background-color: #C7C6C6;
+    color: #888888;
     cursor: not-allowed;
 }
 

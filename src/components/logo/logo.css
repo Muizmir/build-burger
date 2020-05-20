@@ -1,9 +1,14 @@
 .Logo{
-    background-color: white;
+    background-color: rgb(238, 235, 213);;
     padding: 3px 1px;
-    height: 70%;
+    height: 80%;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease-out;
+}
+
+.Logo:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
 }
 
 .Logo img{

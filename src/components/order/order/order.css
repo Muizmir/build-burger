@@ -1,8 +1,37 @@
 .Order{
-    width: 80%;
-    border: 1px solid #eee;
+    width: 90%;
     box-shadow: 0 2px 3px #ccc;
-    padding: 10px;
-    margin: 10px auto;
+    padding: 20px;
+    margin: 12px auto;
     box-sizing: border-box;
+    background-color: rgb(231, 228, 186);
+    transition: all 0.3s ease-out;
+}
+
+p{    
+    font-size:20px;
+}
+
+.OrderItems{
+    text-transform: capitalize;
+    font-size:18px;
+    display: inline-block;
+    margin: 4px 8px;
+    border: 1px dotted rgb(224, 211, 86);
+    padding: 4px 8px;    
+    transition: all 0.3s ease-out;
+}
+
+.Order:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
+}
+
+.OrderItems:hover{
+    box-shadow: 0px 0px 12px 3px black, inset 0px 0px 12px 3px rgb(218, 200, 144);
+}
+
+@media(min-width: 500px){
+    .Order{
+        width: 75%;
+    }
 }

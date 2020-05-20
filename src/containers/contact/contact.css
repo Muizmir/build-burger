@@ -1,0 +1,47 @@
+.Contact {
+    margin: 120px auto;
+    width: 55%;
+    text-align: center;
+    box-shadow: 0 2px 3px rgb(224, 211, 86);
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: rgb(231, 228, 186);    
+    transition: all 0.3s ease-out;
+}
+
+.Contact:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
+}
+
+.ContactText {
+      font-weight: normal;
+      text-align: justify;
+      text-justify: inter-word;
+      margin: 5px;
+      font-size: 20px;
+      color:black;
+  }
+
+.Linkedin {
+        width: auto;
+        margin: 0 auto;
+        display: flex;
+  }
+
+.LI-profile-badge {
+    margin: auto;
+    background-color: rgb(218, 170, 68);
+    box-shadow: 0px 0px 10px 2px black, inset 0px 0px 5px 1px rgb(218, 200, 144);
+}
+
+.LI-logo{
+  width: 65px;
+}
+
+@media screen and (max-width: 600px){
+    .Contact {
+      width: 85%;
+      margin: 10px auto;
+      padding: 10px;
+    }
+}

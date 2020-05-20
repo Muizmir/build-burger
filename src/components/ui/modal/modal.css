@@ -1,15 +1,18 @@
 .Modal {
     position: fixed;
     z-index: 500;
-    background-color: white;
+    background-color: rgb(231, 228, 186);
     width: 70%;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px rgb(224, 211, 86);
     padding: 16px;
     left: 15%;
     top: 30%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
+}
+
+.Modal:hover{
+    box-shadow: 0px 0px 15px 4px black, inset 0px 0px 15px 4px rgb(218, 200, 144);
 }
 
 @media (min-width: 600px) {
